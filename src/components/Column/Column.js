@@ -9,12 +9,13 @@ import {settings} from '../../data/dataStore';
 class Column extends React.Component {
   state = {
     cards: this.props.cards || [],
-  }
+  };
 
   static propTypes = {
     title: PropTypes.node,
     icon: PropTypes.node,
-  }
+    cards: PropTypes.node,
+  };
 
   addCard(title){
     this.setState(state => (
@@ -24,14 +25,13 @@ class Column extends React.Component {
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
 
   render() {
-    {console.log(this.props.icon)}
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{this.props.title}<span className={styles.icon}><Icon name={this.props.icon}/></span></h3>
@@ -44,7 +44,7 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 
 
