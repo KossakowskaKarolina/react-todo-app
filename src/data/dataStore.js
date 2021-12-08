@@ -92,6 +92,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Work',
+    description: 'Work-related tasks',
+    image: 'https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_960_720.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Coding challenges',
+    description: 'Things to improve my coding skills',
+    image: 'https://cdn.pixabay.com/photo/2021/03/27/06/31/code-6127616_960_720.png',
+  },
 ];
 
 const columns = [
